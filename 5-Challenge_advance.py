@@ -27,7 +27,33 @@ def double_index2(lst2, index2):
         new_list[index2] = new_list[index2] * 2
         return new_list
 
-#Uncomment the line below when your function is done
+# Uncomment the line below when your function is done
 print(double_index2([3, 8, -10, 12], 2))
 print(double_index2([3, 8, -10, 12], 3))
 
+# Exercice 5:
+# my solution
+#Write your function here
+def middle_element(lst):
+  if len(lst) % 2 == 0:
+    index1 = int(len(lst) / 2 - 1)
+    index2 = int(len(lst) / 2)
+    sum = (lst[index1] + lst[index2]) / 2
+    return sum
+  else:
+    index_odd = (len(lst) - 1) / 2
+    index_odd = int(index_odd)
+    return lst[index_odd]
+
+#Uncomment the line below when your function is done
+print(middle_element([5, 2, -10, -4, 4, 5]))
+
+# solution
+def middle_element2(lst):
+  if len(lst) % 2 == 0:
+    sum = lst[int(len(lst)/2)] + lst[int(len(lst)/2) - 1]
+    return sum / 2
+  else:
+    return lst[int(len(lst)/2)]
+
+print(middle_element2([5, 2, -10, -4, 4, 5]))
