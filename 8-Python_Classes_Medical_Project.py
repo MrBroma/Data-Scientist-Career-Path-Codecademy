@@ -48,3 +48,4 @@ patient2 = Patient("Loic", 35, 1, 26, 0, 0)
 
 print(patient1.patient_profile())
 print(patient2.patient_profile())
+
